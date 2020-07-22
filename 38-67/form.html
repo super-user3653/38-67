@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment</title>
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+        * {box-sizing: border-box}
+        
+
+        input[type=text], input[type=password] {
+          width: 100%;
+          padding: 15px;
+          margin: 5px 0 22px 0;
+          display: inline-block;
+          border: none;
+          background: #f1f1f1;
+        }
+        
+        input[type=text]:focus, input[type=password]:focus {
+          background-color: #ddd;
+          outline: none;
+        }
+        
+        hr {
+          border: 1px solid #f1f1f1;
+          margin-bottom: 25px;
+        }
+        
+
+        button {
+          background-color: rgb(40, 193, 231);
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          cursor: pointer;
+          width: 100%;
+          opacity: 0.9;
+          margin-bottom: 50;
+          font-weight: 900;
+          font-size: 100%;
+        }
+        
+        button:hover {
+          opacity:1;
+        }
+        
+
+        .nobtn {
+          padding: 14px 20px;
+          background-color: #f44336;
+        }
+        
+
+        .nobtn, .yesbtn {
+
+          width: 30%;
+          margin: 5px;
+        }
+        
+        .container {
+          padding: 50px;
+        }
+        
+
+
+        .clearfix::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        
+        @media screen and (max-width: 300px) {
+          .cancelbtn, .signupbtn {
+             width: 100%;
+          }
+        }</style>
+</head>
+<body>
+    <h1>1. Create a signup form and display form data in your web
+        page on submission.</h1>
+        <br><br>
+        <form onsubmit="submitfunc()" style="border:1px solid #ccc">
+            <div class="container">
+              <h1>Sign Up</h1>
+              <p>Please fill in this form to create an account.</p>
+              <hr>
+                
+              <label for="first"><b>First Name</b></label>
+              <input id="firstnameinput" type="text" placeholder="Enter First Name" name="email" required>
+          
+              <label for="last"><b>Last Name</b></label>
+              <input id="lastnameinput" type="text" placeholder="Enter Last Name" name="email" required>
+          
+
+              <label for="email"><b>Email</b></label>
+              <input id="emailinput" type="text" placeholder="Enter Email" name="email" required>
+          
+              <label for="psw"><b>Password</b></label>
+              <input id="passwordinput" type="password" placeholder="Enter Password" name="psw" required>
+          
+              <label for="psw-repeat"><b>Repeat Password</b></label>
+              <input id="repeatpassinput" type="password" placeholder="Repeat Password" name="psw-repeat" required>
+              
+              <label>
+                <input id="input" type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+              </label>
+              
+              <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+              
+              <div class="clearfix">
+                <button type="button" class="nobtn" onclick="alert('Canceled')">Cancel</button>
+                <button type="button" class="yesbtn" onclick="submitfunc()">Sign Up</button>
+              </div>
+            </div>
+          </form>
+          <br><br>
+          <h4 id="fullname"></h4><br>
+          <h4 id="emailadd"></h4><br>
+          <h4 id="pass"></h4><br>
+
+          
+          <script src="assignPartThree.js"></script>
+</body>
+</html>
