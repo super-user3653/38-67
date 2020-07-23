@@ -76,12 +76,23 @@ function main(sub1, sub2, sub3) {
     
   }
   function percentage(sub1, sub2, sub3) {
-    
+
+      var p =(sub1/100*100) + " ";
+
+      var d =(sub2/100*100) + " ";
+
+      var g =(sub3/100*100) + " ";
+      return p;
+      return d;
+      return g;
+            
   }
-  alert(average());
+  alert(average(sub1, sub2, sub3));
+  alert(percentage(sub1, sub2, sub3));
   
 }
 main();
+
 
 
 // 5. You have learned the function indexOf. Code your own custom
@@ -89,7 +100,21 @@ main();
 //    for single character as of now.
 
 
+var inputer = prompt("Please Enter A String");
+var inputers = prompt("Enter a Charcter");
+var inputerss = input.split("");
 
+function findindex(instring, char){
+    var indexoff;
+    for(var i = 0; i < instring.length; i ++ ) {
+       if(instring[i] === char){
+          indexoff = i;
+        }
+        return index;
+    }
+}
+
+console.log(findindex(inputer, inputers));
 
 
 // 6. Write a function to delete all vowels from a sentence. Assume

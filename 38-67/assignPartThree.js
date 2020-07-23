@@ -35,7 +35,10 @@
 //    displayed.
 
 
-
+function parg(e){
+    var edittext = "Lorem ipsum dolor sit amet dolor ilet lorime aop hos hyteo sjaloe";
+    document.getElementById("parg").innerHTML = edittext;
+}
 
 
 // 3. In previous assignment you have created a tabular data
@@ -47,6 +50,24 @@
 //    appear with the values of that row.
 
 
+// function del(a){
+//     var row = a.parentNode.parentNode;
+//     row.parentNode.removeChild(row)
+ 
+//  }
+ 
 
+
+//  // var name1 = prompt("name1");
+//  // var name2 = prompt("name2");
+//  // var name3 = prompt("name3");
+//  // var name4 = prompt("name4");
+ 
+ function editItem(e) {
+    var val = e.parentNode.firstChild.nodeValue;
+    var edittexter = prompt("Enter value", val);
+    e.getElementsByTagName("p").nodeValue = edittexter;
+    
+}
 
 
